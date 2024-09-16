@@ -1,0 +1,89 @@
+/* styles.css */
+
+.containerr {
+  display: flex;
+  justify-content: center;
+  background-color: #fff; /* Thay đổi màu nền thành màu trắng */
+}
+  
+  .form-container {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .form-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-container label {
+    font-weight: bold;
+  }
+  
+  .input-container input,
+  .input-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .submit-button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #40a9ff;
+  }
+  
+  .data-container {
+    width: 50%;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .data-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .data-item {
+    margin-bottom: 10px;
+  }
+  
+  .data-item label {
+    font-weight: bold;
+  }
+  
+  .data-item p {
+    margin: 0;
+  }
+  .data-item {
+    margin-bottom: 38.5px;
+  }
+  
+  .data-item label {
+    font-weight: bold;
+  }
+  
+  .data-item p {
+    margin: 0;
+    display: inline; /* Hiển thị phần giá trị trên cùng dòng với nhãn */
+    margin-left: 5px; /* Tạo khoảng cách giữa nhãn và giá trị */
+  }

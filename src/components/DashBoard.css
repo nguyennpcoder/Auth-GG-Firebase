@@ -1,0 +1,217 @@
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #526585;
+      color: #08080c;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+  #sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #7787a4;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+    
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1130px;
+      height: 140px;
+      background: rgb(63, 76, 157);
+      background-position: center center;
+      background-size: cover;
+    }
+  
+  .header h1 {
+      margin-bottom: 10px;
+      color: rgb(211, 82, 8);
+      
+  }
+  .header, .container, .search, .menu, .image-container {
+    border-radius: 10px; 
+    overflow: hidden; 
+  }
+  
+  h2 {
+    color: rgb(118, 95, 72); 
+}
+  
+  .logo {
+    width: 150px;
+    height: auto; 
+    margin-left: -950px;
+    float: left; 
+  }
+  
+  b {
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: rgb(132, 102, 72);
+    width: 1130px;
+    height: 60px;
+
+  }
+  
+  b .menu ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0;
+  }
+  
+  b .menu li {
+    float: left;
+    margin-right: 40px; 
+    margin-left: 1px; /* Di chuyển qua trái 1px */
+    line-height: 30px;
+    padding: 0;
+  }
+  
+  b .menu a {
+    text-decoration: none;
+    color: rgb(211, 82, 8);
+  }
+  
+  .container {
+    position: relative;
+    margin-left: 40px;
+    
+  }
+  
+  .search {
+    display: flex;
+    position: absolute; 
+    top: 10px;
+    right: 0; 
+    margin-right: 25px;
+  }
+
+  
+  b {
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: rgb(55, 60, 123);
+    width: 1130px;
+    height: 60px;
+  }
+  
+ /* content  */
+ .content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Giảm kích thước tối thiểu của mỗi khung bài viết */
+  grid-gap: 20px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: #162d6a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 252, 252, 0.1);
+}
+
+.article h2 {
+  color: rgb(217, 74, 8);
+  font-size: 17px;
+  margin-bottom: 45%; /* Giảm margin dưới để tiêu đề và nội dung không cách quá xa */
+  height: 50px; /* Đảm bảo chiều cao cố định cho tiêu đề */
+}
+
+.article p {
+  margin-top: 5px;
+  color: white;
+  font-size: 15px;
+  flex: 100%; /* Đảm bảo nội dung co giãn để điền vào không gian còn lại */
+  height: 100%; /* Đảm bảo chiều cao cố định cho nội dung */
+}
+
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  margin-top: 0;
+}
+
+.read-more {
+  display: block;
+  margin-top: auto; 
+  text-align: center; 
+  color: rgb(16, 233, 211);
+  text-decoration: none;
+  font-size: 20px; 
+}
+
+/* button */
+.read-more {
+  text-decoration: none;
+  color: rgb(16, 233, 211);
+  transition: color 0.3s; 
+}
+
+.read-more:hover {
+  color: rgb(251, 14, 14); 
+}
+
+.read-more-button {
+  
+  border: none; 
+  background: none; 
+  padding: 0; 
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+.read-more-button:hover {
+  transform: scale(1.2); 
+}
+
+
+/* img */
+.last{
+  color: aquamarine;
+  text-align: center;
+}
+.image{
+  max-width: 1000px;  
+}
+.image img {
+  width: 1130px;
+  height: 300px; 
+  display: flex;
+}
+.image-container {
+  width: 1130px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+  
+}
+
+.image-container img.active {
+  opacity: 1;
+}
+
+/* 3d */
+
+

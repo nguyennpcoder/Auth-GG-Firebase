@@ -1,0 +1,52 @@
+.contair {
+    position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+    margin-top: calc(50vh - 280px);
+  }
+  
+  .signInButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+  }
+
+  .signInButtons button {
+    background-color: #ffffff; 
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .signInButtons button:hover {
+    opacity: 0.8;
+  }
+  
+  .googleButton {
+    background-color: #4285f4; 
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .googleButton:hover {
+    background-color: #3f80ea; /* Màu nền khi di chuột qua */
+  }
+  
